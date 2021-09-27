@@ -1,0 +1,22 @@
+body {
+  background-color: #846fe0;
+}
+
+.fundobranco {
+  display: flex;
+  background-color: #14ca1d;
+  font-weight: bold;
+  justify-content: space-around;
+  flex-direction: column;
+  border-style: solid;
+  align-items: stretch;
+}
+
+.fundoazul {
+  display: flex;
+  background-color: rgb(13, 0, 128);
+  justify-content: space-around;
+  flex-direction: column;
+  border-style: solid;
+  align-items: stretch;
+}
