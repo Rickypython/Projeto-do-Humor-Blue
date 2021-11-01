@@ -1,24 +1,52 @@
-var botao1 = document.getElementById("botao");
-var valorDoBotao = botao1.value;
-var p1 = document.getElementById("p1");
-var imagem1 = document.getElementById("fotopit");
 
-botao1.onclick = function (event) {
-    var value = event.target.value;
-    if (value === "estado1") {
-        imagem1.src = 'https://image.cachorrogato.com.br/textimages/cao-bravo.jpg';
+
+body{
     
-        botao1.value = "estado2";
-        p1.innerHTML = "O canino bravo...";
-    } else if (value === "estado2" ) {
-        imagem1.src = '  <img src="https://thumbs.dreamstime.com/z/filhote-de-cachorro-de-pitbull-branco-e-marrom-15055294.jpg';
-        botao1.value = "estado1";
-        p1.innerHTML = "O canino calmo...";
+    background-color: black;
 
-    } else if (value === "estado3" ) {
-        imagem1.src = 'https://www.dicaspetz.com.br/wp-content/uploads/2020/07/curiosidades-sobre-pitbull-pet.jpg' ;
-        botao1.value = "estado1";
-        // Lembra de mudar a URL acima para o noem do arquivo da imagem que pretenda utilizar...
-        p1.innerHTML = "O canino calmo...";
-    }
+}
+
+h1{
+
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    color: rgb(247, 245, 243);
+    margin: 0 auto;
+    text-align: center;
+  }
+
+
+h2 {
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    color: rgb(128, 5, 5);
+    text-align: center;
+}
+
+
+   div{
+       display: flex;
+       justify-content: center;
+       font-family: Verdana, Geneva, Tahoma, sans-serif;
+        color: blanchedalmond;
+        align-items: center;
+   }
+
+button {
+    font-family: Arial, Helvetica, sans-serif;
+    color: rgb(10, 7, 1);
+    font-size: large;
+    display: flex;
+    margin: 0 auto;
+    position: center;
+    right: 150px;
+    top: 500px;
+    border-radius: 12px;
+}
+
+footer {
+    font-size: smaller;
+    font-family: Arial, Helvetica, sans-serif;
+    color: blanchedalmond;
+    position: absolute;
+    top: 580px;
+    right: 50px;
 }
