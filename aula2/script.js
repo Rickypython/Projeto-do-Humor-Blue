@@ -1,52 +1,28 @@
+const botao = document.querySelector ("#btn"); // criar uma variável constante para que o seletor encontre onde quero que tenha a função
+
+const imagem1 = document.querySelector ("#imagempri");
+
+const frase = document.querySelector ("#fraseprincipal");
 
 
-body{
-    
-    background-color: black;
+btn.addEventListener ("click", function () { //aqui coloca o nome da id para adicionar o evento
+    if (botao.value == 'primeiro'){
+        imagem1.src = "cão manso.jpg"
+        frase.innerText = "Pela manhã o cão estava calmo,sereno...!"
+        botao.value = 'segundo'
+    }
 
-}
+    else if (botao.value == "segundo"){
+        imagem1.src = "cão atento.jpg"
+        frase.innerText = "Derrepente ele escuta algo e fica atento..."
+        botao.value = "terceiro"
+    }
 
-h1{
-
-    font-family: Verdana, Geneva, Tahoma, sans-serif;
-    color: rgb(247, 245, 243);
-    margin: 0 auto;
-    text-align: center;
-  }
-
-
-h2 {
-    font-family: Verdana, Geneva, Tahoma, sans-serif;
-    color: rgb(128, 5, 5);
-    text-align: center;
-}
+    else {
+        imagem1.src = "cão feroz.jpg"
+        frase.innerText = "E aparece um gato e o cão fica muito feroz...."
+        botao.value = "primeiro"
+    }
+  });
 
 
-   div{
-       display: flex;
-       justify-content: center;
-       font-family: Verdana, Geneva, Tahoma, sans-serif;
-        color: blanchedalmond;
-        align-items: center;
-   }
-
-button {
-    font-family: Arial, Helvetica, sans-serif;
-    color: rgb(10, 7, 1);
-    font-size: large;
-    display: flex;
-    margin: 0 auto;
-    position: center;
-    right: 150px;
-    top: 500px;
-    border-radius: 12px;
-}
-
-footer {
-    font-size: smaller;
-    font-family: Arial, Helvetica, sans-serif;
-    color: blanchedalmond;
-    position: absolute;
-    top: 580px;
-    right: 50px;
-}
